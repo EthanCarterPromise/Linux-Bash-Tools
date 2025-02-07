@@ -19,23 +19,23 @@ echo "6) 阿里云内网镜像源 (mirrors.cloud.aliyuncs.com)"
 read -p "输入选项 (1、2、3、4、5 或 6): " choice
 
 if [ "$choice" == "1" ]; then
-    SOURCE_URL="deb https://deb.debian.org/debian/"
-    SECURITY_URL="deb https://deb.debian.org/debian-security/"
+    SOURCE_URL="deb https://deb.debian.org/debian"
+    SECURITY_URL="deb https://deb.debian.org/debian-security"
 elif [ "$choice" == "2" ]; then
-    SOURCE_URL="deb https://mirrors.tuna.tsinghua.edu.cn/debian/"
-    SECURITY_URL="deb https://mirrors.tuna.tsinghua.edu.cn/debian-security/"
+    SOURCE_URL="deb https://mirrors.tuna.tsinghua.edu.cn/debian"
+    SECURITY_URL="deb https://mirrors.tuna.tsinghua.edu.cn/debian-security"
 elif [ "$choice" == "3" ]; then
-    SOURCE_URL="deb https://mirrors.cloud.tencent.com/debian/"
-    SECURITY_URL="deb https://mirrors.cloud.tencent.com/debian-security/"
+    SOURCE_URL="deb https://mirrors.cloud.tencent.com/debian"
+    SECURITY_URL="deb https://mirrors.cloud.tencent.com/debian-security"
 elif [ "$choice" == "4" ]; then
-    SOURCE_URL="deb https://mirrors.aliyun.com/debian/"
-    SECURITY_URL="deb https://mirrors.aliyun.com/debian-security/"
+    SOURCE_URL="deb https://mirrors.aliyun.com/debian"
+    SECURITY_URL="deb https://mirrors.aliyun.com/debian-security"
 elif [ "$choice" == "5" ]; then
-    SOURCE_URL="deb http://mirrors.tencentyun.com/debian/"
-    SECURITY_URL="deb http://mirrors.tencentyun.com/debian-security/"
+    SOURCE_URL="deb http://mirrors.tencentyun.com/debian"
+    SECURITY_URL="deb http://mirrors.tencentyun.com/debian-security"
 elif [ "$choice" == "6" ]; then
-    SOURCE_URL="deb http://mirrors.cloud.aliyuncs.com/debian/"
-    SECURITY_URL="deb http://mirrors.cloud.aliyuncs.com/debian-security/"
+    SOURCE_URL="deb http://mirrors.cloud.aliyuncs.com/debian"
+    SECURITY_URL="deb http://mirrors.cloud.aliyuncs.com/debian-security"
 else
     echo "无效选项，退出。"
     exit 1
